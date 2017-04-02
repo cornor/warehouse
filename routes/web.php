@@ -15,7 +15,7 @@ $app->get('/',function () use ($app) {
     return $app->version();
 });
 
-$app->get('test/{aId}/{bId}', ['as'=> 'gameIndex', 'uses' => 'TestController@index']);
+$app->get('admin/index', ['as'=> 'adminIndex', 'uses' => 'AdminController@index']);
 
 
 
